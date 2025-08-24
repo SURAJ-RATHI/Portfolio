@@ -67,7 +67,7 @@ export const experienceData: ExperienceItem[] = [
     location: 'Remote',
     description: 'Full Stack Developer – Built and deployed scalable REST APIs, managed server infrastructure, and developed internal tools to streamline business operations.',
     color: 'from-blue-500 to-blue-600',
-    icon: '/src/assets/images/kalpkriti_logo.jpg',
+    icon: '/kalpkriti_logo.jpg',
     iconType: 'image'
   },
   {
@@ -77,7 +77,7 @@ export const experienceData: ExperienceItem[] = [
     location: 'On-site',
     description: 'Web Development Intern – Built MERN stack applications, developed REST APIs, and worked on attendance software enhancements and AI chatbot integration.',
     color: 'from-orange-500 to-red-500',
-    icon: '/src/assets/images/vvdn_logo.jpg',
+    icon: '/vvdn_logo.jpg',
     iconType: 'image'
   }
 ];
@@ -90,7 +90,7 @@ export const projectsData: ProjectItem[] = [
     technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Tailwind CSS", "GSAP", "Multer"],
     githubUrl: "https://github.com/SURAJ-RATHI/FastGen",
     liveUrl: "https://fastgen-ai.vercel.app/",
-    icon: "/src/assets/images/projects/1.png",
+    icon: "/projects/1.png",
     iconType: 'image',
     color: "from-blue-500 via-purple-500 to-pink-500"
   },
@@ -101,7 +101,7 @@ export const projectsData: ProjectItem[] = [
     technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Socket.io", "Monaco Editor", "Konva.js", "Agora SDK", "Three.js", "Ant Design"],
     githubUrl: "https://github.com/SURAJ-RATHI/kodr",
     liveUrl: "https://kodr-test.vercel.app/",
-    icon: "/src/assets/images/projects/2.png",
+    icon: "/projects/2.png",
     iconType: 'image',
     color: "from-green-500 via-teal-500 to-blue-500"
   },
@@ -112,7 +112,7 @@ export const projectsData: ProjectItem[] = [
     technologies: ["React.js", "Tailwind CSS", "Node.js", "MongoDB", "Express.js", "Authentication", "Payment Integration"],
     githubUrl: "https://github.com/surajrathi/dev100x",
     liveUrl: "https://dev100x.vercel.app/",
-    icon: "/src/assets/images/projects/3.png",
+    icon: "/projects/3.png",
     iconType: 'image',
     color: "from-blue-500 via-purple-500 to-pink-500"
   },
@@ -123,7 +123,7 @@ export const projectsData: ProjectItem[] = [
     technologies: ["VS Code Extension", "TypeScript", "Node.js", "Whiteboard Integration", "Code Visualization"],
     githubUrl: "https://github.com/SURAJ-RATHI/dev-lobby",
     liveUrl: "https://marketplace.visualstudio.com/items?itemName=dev-lobby",
-    icon: "/src/assets/images/projects/4.png",
+    icon: "/projects/4.png",
     iconType: 'image',
     color: "from-green-500 via-teal-500 to-blue-500"
   }

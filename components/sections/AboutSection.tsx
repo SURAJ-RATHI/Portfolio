@@ -4,7 +4,7 @@ import { Download, Mail, MessageCircle } from 'lucide-react';
 import { heroTechLogos, userSkills } from '../../constants/techData';
 import { TechIcon } from '../TechIcon';
 import TechLogos from '../TechLogos';
-import profileImage from '../../src/assets/images/profile-image.png';
+const profileImage = '/profile-image.png';
 
 interface AboutSectionProps {
   mousePosition: { x: number; y: number };
