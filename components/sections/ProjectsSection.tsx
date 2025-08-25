@@ -18,9 +18,6 @@ export const ProjectsSection = () => {
       >
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold theme-text-primary mb-8 sm:mb-10 lg:mb-12 text-center">Projects</h2>
         
-        {/* Debug info */}
-       
-        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {projectsData && projectsData.length > 0 ? projectsData.map((project, index) => (
             <motion.div
@@ -30,12 +27,7 @@ export const ProjectsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0 }}
               viewport={{ once: true }}
-              whileHover={{ 
-                scale: 1.02,
-                rotateY: 5,
-                boxShadow: "0 25px 50px rgba(0,0,0,0.15)"
-              }}
-              className="premium-card rounded-2xl sm:rounded-3xl overflow-hidden figma-cursor depth-3 no-hover-lift"
+              className="premium-card rounded-2xl sm:rounded-3xl overflow-hidden figma-cursor depth-3"
               data-move
             >
               {/* Image Card at Top */}
@@ -71,47 +63,41 @@ export const ProjectsSection = () => {
                 {/* Skills Tags */}
                 <div className="flex flex-wrap gap-2 sm:gap-3 mb-6 sm:mb-8">
                   {project.technologies.map((tech) => (
-                    <motion.span 
+                    <span 
                       key={tech} 
-                      className="px-3 sm:px-4 py-1.5 sm:py-2 glass-intense rounded-lg sm:rounded-xl text-xs sm:text-sm font-medium figma-cursor magnetic depth-1"
-                      whileHover={{ scale: 1.05 }}
-                      data-clickable
+                      className="px-3 sm:px-4 py-1.5 sm:py-2 glass-intense rounded-lg sm:rounded-xl text-xs sm:text-sm font-medium figma-cursor depth-1"
                     >
                       {tech}
-                    </motion.span>
+                    </span>
                   ))}
                 </div>
                 
                 {/* Project Links */}
                 <div className="flex gap-3 sm:gap-4">
                   {project.githubUrl && (
-                    <motion.a
+                    <a
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
                       className="flex-1 flex items-center justify-center gap-2 px-4 sm:px-5 py-3 sm:py-4 bg-gray-800 dark:bg-gray-700 text-white rounded-lg sm:rounded-xl font-medium text-sm sm:text-base hover:bg-gray-700 dark:hover:bg-gray-600 transition-colors duration-200 figma-cursor"
                       data-clickable
                     >
                       <Github className="w-4 h-4 sm:w-5 sm:h-5" />
                       <span>GitHub</span>
-                    </motion.a>
+                    </a>
                   )}
                   
                   {project.liveUrl && (
-                    <motion.a
+                    <a
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
                       className="flex-1 flex items-center justify-center gap-2 px-4 sm:px-5 py-3 sm:py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg sm:rounded-xl font-medium text-sm sm:text-base transition-colors duration-200 figma-cursor"
                       data-clickable
                     >
                       <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5" />
                       <span>Live Demo</span>
-                    </motion.a>
+                    </a>
                   )}
                 </div>
               </div>
