@@ -19,7 +19,7 @@ import { sectionToPathMap, pathToSectionMap } from './constants/fileSystem';
 
 export default function App() {
   const [searchOpen, setSearchOpen] = useState(false);
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(false); // Hidden by default on mobile
   const [showWelcome, setShowWelcome] = useState(true);
   const [currentPath, setCurrentPath] = useState('/suraj-rathi/about');
   const [secretFolderOpen, setSecretFolderOpen] = useState(false);
@@ -135,8 +135,13 @@ export default function App() {
     const handleResize = () => {
       if (window.innerWidth >= 1024) {
         setSidebarOpen(true);
+      } else {
+        setSidebarOpen(false);
       }
     };
+
+    // Set initial state based on current screen size
+    handleResize();
 
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
