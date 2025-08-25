@@ -31,7 +31,7 @@ export const ProjectsSection = () => {
               transition={{ delay: index * 0.1, duration: 0 }}
               viewport={{ once: true }}
               whileHover={{ 
-                y: -8, 
+              
                 scale: 1.02,
                 rotateY: 5,
                 boxShadow: "0 25px 50px rgba(0,0,0,0.15)"
