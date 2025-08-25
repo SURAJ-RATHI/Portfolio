@@ -57,7 +57,7 @@ export function SearchDialog({ open, onOpenChange, onNavigate, onToggleSidebar }
     { id: 'github', label: 'GitHub Profile', icon: Github, description: 'View my code repositories on GitHub', category: 'Social', href: 'https://github.com/SURAJ-RATHI' },
     { id: 'gmail', label: 'Gmail Contact', icon: Mail, description: 'Send me an email at surajrathi127021@gmail.com', category: 'Social', href: 'mailto:surajrathi127021@gmail.com' },
     { id: 'whatsapp', label: 'WhatsApp Contact', icon: MessageCircle, description: 'Contact me on WhatsApp', category: 'Social', href: 'https://wa.me/917015506489' },
-    { id: 'twitter', label: 'Twitter Profile', icon: Twitter, description: 'Follow me on Twitter', category: 'Social', href: 'https://twitter.com/surajrathi' },
+    { id: 'twitter', label: 'Twitter Profile', icon: Twitter, description: 'Follow me on Twitter', category: 'Social', href: 'https://twitter.com/SurajRathi65983' },
     { id: 'leetcode', label: 'LeetCode Profile', icon: Code, description: 'View my coding solutions on LeetCode', category: 'Social', href: 'https://leetcode.com/u/SURYA-0155/' },
     
     // Secret Projects

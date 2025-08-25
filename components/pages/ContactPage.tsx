@@ -60,8 +60,8 @@ export function ContactPage() {
     {
       name: 'Twitter',
       icon: Twitter,
-      url: 'https://twitter.com/surajrathi',
-      username: '@surajrathi',
+      url: 'https://twitter.com/SurajRathi65983',
+      username: '@SurajRathi65983',
       color: 'text-sky-500 dark:text-sky-400'
     }
   ];

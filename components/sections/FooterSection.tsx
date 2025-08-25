@@ -47,7 +47,7 @@ export const FooterSection = ({ scrollToSection }: FooterSectionProps) => {
               {[
                 { name: 'LinkedIn', href: 'https://www.linkedin.com/in/suraj127021/', icon: Linkedin, color: 'hover:text-blue-600' },
                 { name: 'GitHub', href: 'https://github.com/SURAJ-RATHI', icon: Github, color: 'hover:text-gray-800 dark:hover:text-gray-200' },
-                { name: 'Twitter', href: 'https://twitter.com/surajrathi', icon: Twitter, color: 'hover:text-blue-400' },
+                { name: 'Twitter', href: 'https://twitter.com/SurajRathi65983', icon: Twitter, color: 'hover:text-blue-400' },
                 { name: 'LeetCode', href: 'https://leetcode.com/u/SURYA-0155/', icon: Code, color: 'hover:text-yellow-600' }
               ].map((social, index) => {
                 const Icon = social.icon;

@@ -204,12 +204,12 @@ const fileSystemStructure: FileSystemItem = {
               href: 'https://wa.me/917015506489'
             },
             {
-              id: 'twitter',
-              name: 'Twitter.profile',
-              type: 'file',
-              icon: Twitter,
-              path: '/suraj-rathi/social-handle/twitter',
-              href: 'https://twitter.com/surajrathi'
+                      id: 'twitter',
+        name: 'Twitter.profile',
+        type: 'file',
+        icon: Twitter,
+        path: '/suraj-rathi/social-handle/twitter',
+        href: 'https://twitter.com/SurajRathi65983'
             },
             {
               id: 'leetcode',
@@ -496,7 +496,7 @@ export function FileSystemNavigation({ onNavigate, currentPath, onToggleSidebar 
                   { icon: Github, href: 'https://github.com/SURAJ-RATHI', label: 'GitHub', color: 'hover:text-gray-800 dark:hover:text-gray-200' },
                   { icon: Mail, href: 'mailto:surajrathi127021@gmail.com', label: 'Email', color: 'hover:text-blue-500' },
                   { icon: MessageCircle, href: 'https://wa.me/917015506489', label: 'WhatsApp', color: 'hover:text-green-600' },
-                  { icon: Twitter, href: 'https://twitter.com/surajrathi', label: 'Twitter', color: 'hover:text-blue-400' },
+                  { icon: Twitter, href: 'https://twitter.com/SurajRathi65983', label: 'Twitter', color: 'hover:text-blue-400' },
                   { icon: Code, href: 'https://leetcode.com/u/SURYA-0155/', label: 'LeetCode', color: 'hover:text-yellow-600' }
                 ].map((social, index) => {
                   const Icon = social.icon;

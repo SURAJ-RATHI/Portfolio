@@ -10,7 +10,7 @@ export const SimpleWelcome = ({ onComplete }: SimpleWelcomeProps) => {
   const [showLine, setShowLine] = useState(false);
   
   const greetings = [
-    'Hello', 'Hola', 'Bonjour', 'Hallo', 'नमस्ते', 'こんにちは', '안녕하세요', 'Ciao'
+    'नमस्ते', 'Hello', 'Hola', 'Bonjour', 'こんにちは', '안녕하세요', 
   ];
   
   useEffect(() => {
