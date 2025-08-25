@@ -31,7 +31,6 @@ export const ProjectsSection = () => {
               transition={{ delay: index * 0.1, duration: 0 }}
               viewport={{ once: true }}
               whileHover={{ 
-              
                 scale: 1.02,
                 rotateY: 5,
                 boxShadow: "0 25px 50px rgba(0,0,0,0.15)"
@@ -75,7 +74,7 @@ export const ProjectsSection = () => {
                     <motion.span 
                       key={tech} 
                       className="px-3 sm:px-4 py-1.5 sm:py-2 glass-intense rounded-lg sm:rounded-xl text-xs sm:text-sm font-medium figma-cursor magnetic depth-1"
-                      whileHover={{ scale: 1.05, y: -1 }}
+                      whileHover={{ scale: 1.05 }}
                       data-clickable
                     >
                       {tech}
@@ -90,7 +89,7 @@ export const ProjectsSection = () => {
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      whileHover={{ scale: 1.05, y: -2 }}
+                      whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       className="flex-1 flex items-center justify-center gap-2 px-4 sm:px-5 py-3 sm:py-4 bg-gray-800 dark:bg-gray-700 text-white rounded-lg sm:rounded-xl font-medium text-sm sm:text-base hover:bg-gray-700 dark:hover:bg-gray-600 transition-colors duration-200 figma-cursor"
                       data-clickable
@@ -105,7 +104,7 @@ export const ProjectsSection = () => {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      whileHover={{ scale: 1.05, y: -2 }}
+                      whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       className="flex-1 flex items-center justify-center gap-2 px-4 sm:px-5 py-3 sm:py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg sm:rounded-xl font-medium text-sm sm:text-base transition-colors duration-200 figma-cursor"
                       data-clickable
