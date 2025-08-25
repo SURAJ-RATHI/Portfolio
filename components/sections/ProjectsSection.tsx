@@ -35,7 +35,7 @@ export const ProjectsSection = () => {
                 rotateY: 5,
                 boxShadow: "0 25px 50px rgba(0,0,0,0.15)"
               }}
-              className="premium-card rounded-2xl sm:rounded-3xl overflow-hidden figma-cursor depth-3"
+              className="premium-card rounded-2xl sm:rounded-3xl overflow-hidden figma-cursor depth-3 no-hover-lift"
               data-move
             >
               {/* Image Card at Top */}
