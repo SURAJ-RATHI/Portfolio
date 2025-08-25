@@ -15,13 +15,19 @@ export const SimpleWelcome = ({ onComplete }: SimpleWelcomeProps) => {
   
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentGreeting((prev) => (prev + 1) % greetings.length);
-    }, 400);
+      setCurrentGreeting((prev) => {
+        if (prev >= greetings.length - 1) {
+          clearInterval(interval);
+          return prev;
+        }
+        return prev + 1;
+      });
+    }, 300); // Reduced from 400ms to 300ms
     
-    // Calculate total time for all greetings to cycle through
-    const totalGreetingTime = greetings.length * 400; // 8 greetings * 400ms = 3.2 seconds
+    // Calculate total time for all greetings to show once
+    const totalGreetingTime = (greetings.length - 1) * 300; // 7 transitions * 300ms = 2.1 seconds
     
-    // Show horizontal line after all greetings have finished cycling
+    // Show horizontal line after all greetings have finished
     const lineTimeout = setTimeout(() => {
       setShowLine(true);
     }, totalGreetingTime);
@@ -30,7 +36,7 @@ export const SimpleWelcome = ({ onComplete }: SimpleWelcomeProps) => {
     const completeTimeout = setTimeout(() => {
       clearInterval(interval);
       onComplete();
-    }, totalGreetingTime + 1500); // 3.2s + 1.5s line animation = 4.7s total
+    }, totalGreetingTime + 1200); // 2.1s + 1.2s line animation = 3.3s total
     
     return () => {
       clearInterval(interval);
