@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Search, Menu, Home } from 'lucide-react';
 import { SearchDialog } from './components/SearchDialog';
-import { SimpleWelcome } from './components/SimpleWelcome';
 import { FileSystemNavigation } from './components/FileSystemNavigation';
 import { SecretFolder } from './components/SecretFolder';
 import { BackgroundElements } from './components/BackgroundElements';
@@ -20,7 +19,6 @@ import { sectionToPathMap, pathToSectionMap } from './constants/fileSystem';
 export default function App() {
   const [searchOpen, setSearchOpen] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false); // Hidden by default on mobile
-  const [showWelcome, setShowWelcome] = useState(true);
   const [currentPath, setCurrentPath] = useState('/suraj-rathi/about');
   const [secretFolderOpen, setSecretFolderOpen] = useState(false);
   const [pdfViewerOpen, setPdfViewerOpen] = useState(false);
@@ -240,12 +238,6 @@ export default function App() {
     console.log('=== End scrollToSection Debug ===');
   };
 
-  const handleWelcomeComplete = () => {
-    setTimeout(() => {
-      setShowWelcome(false);
-    }, 100);
-  };
-
   const handleFileSystemNavigation = (path: string, item: any) => {
     console.log('Navigation triggered:', { path, item });
     setCurrentPath(path);
@@ -380,12 +372,7 @@ export default function App() {
 
   return (
     <>
-      {/* Welcome Screen */}
-      {showWelcome && (
-        <SimpleWelcome onComplete={handleWelcomeComplete} />
-      )}
-      
-      {/* Main Website - Always rendered but revealed by horizontal line */}
+      {/* Main Website */}
       <motion.div 
         ref={containerRef}
         initial={{
