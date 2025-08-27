@@ -27,7 +27,6 @@ export const ProjectsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0 }}
               viewport={{ once: true }}
-<<<<<<< HEAD
               whileHover={{                 
                 y: -8, 
                 scale: 1.02,
